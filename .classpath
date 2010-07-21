@@ -1,12 +1,17 @@
 <classpath>
   <classpathentry kind="src" path="src/main/java"/>
+  <classpathentry kind="src" path="src/main/generated" including="**/*.java"/>
   <classpathentry kind="src" path="src/main/resources" excluding="**/*.java"/>
   <classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="var" path="M2_REPO/javax/activation/activation/1.1/activation-1.1.jar" sourcepath="M2_REPO/javax/activation/activation/1.1/activation-1.1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/javax/xml/bind/jaxb-api/2.2/jaxb-api-2.2.jar" sourcepath="M2_REPO/javax/xml/bind/jaxb-api/2.2/jaxb-api-2.2-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar" sourcepath="M2_REPO/javax/servlet/servlet-api/2.5/servlet-api-2.5-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar" sourcepath="M2_REPO/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/google/appengine/appengine-api-labs/1.3.4/appengine-api-labs-1.3.4.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/google/appengine/appengine-api-stubs/1.3.4/appengine-api-stubs-1.3.4.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/google/appengine/appengine-local-runtime/1.3.4/appengine-local-runtime-1.3.4.jar"/>
   <classpathentry kind="var" path="M2_REPO/commons-lang/commons-lang/2.4/commons-lang-2.4.jar" sourcepath="M2_REPO/commons-lang/commons-lang/2.4/commons-lang-2.4-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/sun/xml/bind/jaxb-impl/2.2/jaxb-impl-2.2.jar" sourcepath="M2_REPO/com/sun/xml/bind/jaxb-impl/2.2/jaxb-impl-2.2-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/ch/qos/logback/logback-classic/0.9.18/logback-classic-0.9.18.jar" sourcepath="M2_REPO/ch/qos/logback/logback-classic/0.9.18/logback-classic-0.9.18-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/ch/qos/logback/logback-core/0.9.18/logback-core-0.9.18.jar" sourcepath="M2_REPO/ch/qos/logback/logback-core/0.9.18/logback-core-0.9.18-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-api/1.5.10/slf4j-api-1.5.10.jar" sourcepath="M2_REPO/org/slf4j/slf4j-api/1.5.10/slf4j-api-1.5.10-sources.jar"/>

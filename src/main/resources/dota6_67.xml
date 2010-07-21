@@ -1,15 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<heroes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dota.xsd">
+<heroes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="schema/dota.xsd">
 	<name>dota</name>
 	<version>6.67</version>
-	
+
 	<hero>
 		<name>普罗德摩尔将军</name>
 		<shortName>Kunkka</shortName>
 		<desc>在近卫的所有盟军中，只有一个人，在许多大陆上都有着不同但又令人生畏的名字。他的追随者们叫他COCO船长，有的人叫他杰克·斯帕罗，还有的人叫他传说中。</desc>
-		<attributes>
-			
-		</attributes>
+
+		<attribute>
+			<basic>力量</basic>
+			<initShot>128</initShot>
+			<initAttack>47-57</initAttack>
+			<initCooldown>1.7</initCooldown>
+			<initDefense>3.6</initDefense>
+			<speed>300</speed>
+			<intelligence>16</intelligence>
+			<agility>22</agility>
+			<strength>18</strength>
+			<goupIntelligence>1.85</goupIntelligence>
+			<goupAgility>1.3</goupAgility>
+			<goupStrength>1.5</goupStrength>
+		</attribute>
+
 		<skills>
 			<skill>
 				<name>洪流</name>

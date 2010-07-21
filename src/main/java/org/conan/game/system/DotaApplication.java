@@ -5,7 +5,7 @@ import org.apache.wicket.protocol.http.HttpSessionStore;
 import org.apache.wicket.protocol.http.WebApplication;
 import org.apache.wicket.session.ISessionStore;
 import org.conan.game.web.HomePage;
-import org.conan.game.web.attribute.Agility;
+import org.conan.game.web.hero.Hero;
 
 /**
  * @author Conan Zhang <mailto:bspsirit@163.com>
@@ -21,15 +21,16 @@ public class DotaApplication extends WebApplication {
     protected void init() {
         super.init();
         getResourceSettings().setResourcePollFrequency(null);
-        setWebPagePath();
-    }
-
-    private void setWebPagePath() {
-        mountBookmarkablePage("agility", Agility.class);
+        
+        mountPagePath();
     }
 
     @Override
     protected ISessionStore newSessionStore() {
         return new HttpSessionStore(this);
+    }
+    
+    private void mountPagePath(){
+        mountBookmarkablePage("/hero", Hero.class);
     }
 }

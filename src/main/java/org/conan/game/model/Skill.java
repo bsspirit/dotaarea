@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 
- * @author Conan Zhang <mailto:bsspirit@gmail.com>
- * 
- */
+*
+* @author Conan Zhang <mailto:bsspirit@gmail.com>
+*
+*/
 public class Skill {
 
     private String name;// 名称

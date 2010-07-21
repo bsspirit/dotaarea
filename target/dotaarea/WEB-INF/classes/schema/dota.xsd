@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<xsd:element name="name" type="xsd:string"></xsd:element>
+	<xsd:element name="version" type="xsd:float"></xsd:element>
+	<xsd:element name="shortName" type="xsd:string"></xsd:element>
+	<xsd:element name="desc" type="xsd:string"></xsd:element>
+	<xsd:element name="level" type="xsd:int"></xsd:element>
+	<xsd:element name="order" type="xsd:int"></xsd:element>
+	<xsd:element name="area" type="xsd:string"></xsd:element>
+	<xsd:element name="distance" type="xsd:string"></xsd:element>
+	<xsd:element name="time" type="xsd:string"></xsd:element>
+	<xsd:element name="mana" type="xsd:string"></xsd:element>
+	<xsd:element name="shortcut" type="xsd:string"></xsd:element>
+	
+	<xsd:element name="basic" type="xsd:string"></xsd:element>
+	<xsd:element name="initShot" type="xsd:int"></xsd:element>
+	<xsd:element name="initAttack" type="xsd:string"></xsd:element>
+	<xsd:element name="initCooldown" type="xsd:float"></xsd:element>
+	<xsd:element name="initDefense" type="xsd:float"></xsd:element>
+	<xsd:element name="speed" type="xsd:int"></xsd:element>
+	<xsd:element name="intelligence" type="xsd:int"></xsd:element>
+	<xsd:element name="agility" type="xsd:int"></xsd:element>
+	<xsd:element name="strength" type="xsd:int"></xsd:element>
+	<xsd:element name="goupIntelligence" type="xsd:float"></xsd:element>
+	<xsd:element name="goupAgility" type="xsd:float"></xsd:element>
+	<xsd:element name="goupStrength" type="xsd:float"></xsd:element>
+
+	<xsd:element name="heroes" type="heroesType"></xsd:element>
+	<xsd:element name="hero" type="heroType"></xsd:element>
+	<xsd:element name="attribute" type="attributeType"></xsd:element>
+	<xsd:element name="skills" type="skillsType"></xsd:element>
+	<xsd:element name="skill" type="skillType"></xsd:element>
+	<xsd:element name="grades" type="gradesType"></xsd:element>
+	<xsd:element name="grade" type="gradeType"></xsd:element>
+
+	<xsd:complexType name="heroesType">
+		<xsd:sequence>
+			<xsd:element ref="name" maxOccurs="1" />
+			<xsd:element ref="version" maxOccurs="1" />
+			<xsd:element ref="hero" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="heroType">
+		<xsd:sequence>
+			<xsd:element ref="name" maxOccurs="1" />
+			<xsd:element ref="shortName" maxOccurs="1" />
+			<xsd:element ref="desc" maxOccurs="1" />
+			<xsd:element ref="attribute" maxOccurs="1" />
+			<xsd:element ref="skills" maxOccurs="1" />
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="attributeType">
+		<xsd:sequence>
+			<xsd:element ref="basic" maxOccurs="1" />
+			<xsd:element ref="initShot" maxOccurs="1" />
+			<xsd:element ref="initAttack" maxOccurs="1" />
+			<xsd:element ref="initCooldown" maxOccurs="1" />
+			<xsd:element ref="initDefense" maxOccurs="1" />
+			<xsd:element ref="speed" maxOccurs="1" />
+			<xsd:element ref="intelligence" maxOccurs="1" />
+			<xsd:element ref="agility" maxOccurs="1" />
+			<xsd:element ref="strength" maxOccurs="1" />
+			<xsd:element ref="goupIntelligence" maxOccurs="1" />
+			<xsd:element ref="goupAgility" maxOccurs="1" />
+			<xsd:element ref="goupStrength" maxOccurs="1" />
+		</xsd:sequence>
+
+	</xsd:complexType>
+
+	<xsd:complexType name="skillsType">
+		<xsd:sequence>
+			<xsd:element ref="skill" maxOccurs="4" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="skillType">
+		<xsd:sequence>
+			<xsd:element ref="name" maxOccurs="1" />
+			<xsd:element ref="order" maxOccurs="1" />
+			<xsd:element ref="shortcut" maxOccurs="1" />
+			<xsd:element ref="desc" maxOccurs="1" />
+			<xsd:element ref="area" maxOccurs="1" minOccurs="0" />
+			<xsd:element ref="distance" maxOccurs="1" minOccurs="0" />
+			<xsd:element ref="time" maxOccurs="1" minOccurs="0" />
+			<xsd:element ref="mana" maxOccurs="1" minOccurs="0" />
+			<xsd:element ref="grades" maxOccurs="1" />
+		</xsd:sequence>
+
+	</xsd:complexType>
+
+	<xsd:complexType name="gradesType">
+		<xsd:sequence>
+			<xsd:element ref="grade" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="gradeType">
+		<xsd:sequence>
+			<xsd:element ref="level" maxOccurs="1" />
+			<xsd:element ref="desc" maxOccurs="1" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+</xsd:schema>

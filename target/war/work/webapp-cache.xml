@@ -107,23 +107,43 @@
           <string>resource/images/97.jpg</string>
           <string>WEB-INF/appengine-web.xml</string>
           <string>WEB-INF/web.xml</string>
+          <string>WEB-INF/classes/dota6_67.xml</string>
+          <string>WEB-INF/classes/jdoconfig.xml</string>
           <string>WEB-INF/classes/log4j.properties</string>
           <string>WEB-INF/classes/logging.properties</string>
-          <string>WEB-INF/classes/META-INF/jdoconfig.xml</string>
           <string>WEB-INF/classes/META-INF/persistence.xml</string>
           <string>WEB-INF/classes/org/conan/game/base/BasePage.class</string>
+          <string>WEB-INF/classes/org/conan/game/dota/generated/AttributeType.class</string>
+          <string>WEB-INF/classes/org/conan/game/dota/generated/GradesType.class</string>
+          <string>WEB-INF/classes/org/conan/game/dota/generated/GradeType.class</string>
+          <string>WEB-INF/classes/org/conan/game/dota/generated/HeroesType.class</string>
+          <string>WEB-INF/classes/org/conan/game/dota/generated/HeroType.class</string>
+          <string>WEB-INF/classes/org/conan/game/dota/generated/ObjectFactory.class</string>
+          <string>WEB-INF/classes/org/conan/game/dota/generated/SkillsType.class</string>
+          <string>WEB-INF/classes/org/conan/game/dota/generated/SkillType.class</string>
+          <string>WEB-INF/classes/org/conan/game/model/client/DotaClient.class</string>
+          <string>WEB-INF/classes/org/conan/game/model/client/DotaClientTest.class</string>
+          <string>WEB-INF/classes/org/conan/game/model/Grade.class</string>
+          <string>WEB-INF/classes/org/conan/game/model/Hero.class</string>
+          <string>WEB-INF/classes/org/conan/game/model/MainRun.class</string>
+          <string>WEB-INF/classes/org/conan/game/model/Skill.class</string>
           <string>WEB-INF/classes/org/conan/game/system/DotaApplication.class</string>
-          <string>WEB-INF/classes/org/conan/game/system/DotaApplication.properties</string>
-          <string>WEB-INF/classes/org/conan/game/web/attribute/Agility.class</string>
-          <string>WEB-INF/classes/org/conan/game/web/attribute/Agility.html</string>
+          <string>WEB-INF/classes/org/conan/game/system/DotaConstants.class</string>
+          <string>WEB-INF/classes/org/conan/game/web/hero/Hero.class</string>
+          <string>WEB-INF/classes/org/conan/game/web/hero/Hero.html</string>
           <string>WEB-INF/classes/org/conan/game/web/HomePage.class</string>
           <string>WEB-INF/classes/org/conan/game/web/HomePage.html</string>
           <string>WEB-INF/classes/org/conan/game/web/LayoutPage.class</string>
           <string>WEB-INF/classes/org/conan/game/web/LayoutPage.html</string>
+          <string>WEB-INF/classes/schema/dota.xsd</string>
           <string>WEB-INF/lib/wicket-1.4.9.jar</string>
           <string>WEB-INF/lib/slf4j-api-1.5.10.jar</string>
           <string>WEB-INF/lib/logback-classic-0.9.18.jar</string>
           <string>WEB-INF/lib/logback-core-0.9.18.jar</string>
+          <string>WEB-INF/lib/jaxb-api-2.2.jar</string>
+          <string>WEB-INF/lib/stax-api-1.0-2.jar</string>
+          <string>WEB-INF/lib/activation-1.1.jar</string>
+          <string>WEB-INF/lib/jaxb-impl-2.2.jar</string>
           <string>WEB-INF/lib/commons-lang-2.4.jar</string>
         </pathsSet>
       </path-set>
@@ -165,6 +185,30 @@
         <optional>false</optional>
       </dependency>
       <targetFileName>logback-classic-0.9.18.jar</targetFileName>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
+        <groupId>javax.xml.bind</groupId>
+        <artifactId>jaxb-api</artifactId>
+        <version>2.2</version>
+        <type>jar</type>
+        <scope>compile</scope>
+        <exclusions/>
+        <optional>false</optional>
+      </dependency>
+      <targetFileName>jaxb-api-2.2.jar</targetFileName>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
+        <groupId>com.sun.xml.bind</groupId>
+        <artifactId>jaxb-impl</artifactId>
+        <version>2.2</version>
+        <type>jar</type>
+        <scope>compile</scope>
+        <exclusions/>
+        <optional>false</optional>
+      </dependency>
+      <targetFileName>jaxb-impl-2.2.jar</targetFileName>
     </org.apache.maven.plugin.war.util.DependencyInfo>
     <org.apache.maven.plugin.war.util.DependencyInfo>
       <dependency>
