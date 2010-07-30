@@ -32,7 +32,7 @@
 				<desc>通过运用他无与伦比的海洋方面的知识，普罗德摩尔将军有能力在指定的区域召唤一阵水流，2秒之后，水流变成一股汹涌的洪流，冲出地面，将范围内的敌方单位抛至空中，造成伤害并在接下来数秒内降低30%的移动速度。</desc>
 				<area>255</area>
 				<distance>1500</distance>
-				<time>12</time>
+				<duration>12</duration>
 				<mana>120</mana>
 				<grades>
 					<grade>
@@ -82,7 +82,7 @@
 				<order>3</order>
 				<shortcut>X</shortcut>
 				<desc>为了能使他的军队迅速集合，普罗德摩尔将军为一个英雄在地上标记其当前的位置，数秒之后，被标记的英雄会立刻返回标记位置。</desc>
-				<time>30</time>
+				<duration>30</duration>
 				<mana>80/90/100/110</mana>
 				<grades>
 					<grade>
@@ -109,7 +109,7 @@
 				<shortcut>T</shortcut>
 				<desc>普罗德摩尔将军召唤出神秘的幽灵船CoCo号，横越战场。CoCo号经过友军时，会为友军灌下CoCo船长的朗姆酒，使其在接下来数秒内提升10%的移动速度，减少所受伤害的一半（酒劲消退时会承受累积的那一半伤害）。幽灵船撞毁后，会对425范围内的敌方单位造成伤害和1秒晕眩。</desc>
 				<area>1000</area>
-				<time>100</time>
+				<duration>100</duration>
 				<mana>150/200/250</mana>
 				<grades>
 					<grade>
@@ -123,6 +123,136 @@
 					<grade>
 						<level>3</level>
 						<desc>CoCo船长的朗姆酒持续7秒，500点伤害</desc>
+					</grade>
+				</grades>
+			</skill>
+		</skills>
+	</hero>
+	
+	
+	<hero>
+		<name>兽王</name>
+		<shortName>BM</shortName>
+		<desc>Rexxar 来自传说中具有半兽半食人魔的血统的Mok`nathal氏族。原本是个四处漂泊的浪人，但为了更好的保护他身边的大自然，Rexxar还是提着他那两把充满力量的斧头加入了近卫军团。作为野兽的朋友，Rexxar善于用他那令人不安的野性撕扯敌人，而且为了胜利，他甚至会将自己的斧头往敌人身上扔去。兽王Rexxar是天底下真正的勇士，并且在需要他的时候随时都可以挺身而出。</desc>
+
+		<attribute>
+			<basic>力量</basic>
+			<initShot>100</initShot>
+			<initAttack>56-60</initAttack>
+			<initCooldown>1.7</initCooldown>
+			<initDefense>4.6</initDefense>
+			<speed>310</speed>
+			<intelligence>16</intelligence>
+			<agility>18</agility>
+			<strength>23</strength>
+			<goupIntelligence>1.9</goupIntelligence>
+			<goupAgility>1.6</goupAgility>
+			<goupStrength>2.2</goupStrength>
+		</attribute>
+
+		<skills>
+			<skill>
+				<name>野性之斧</name>
+				<order>1</order>
+				<shortcut>W</shortcut>
+				<desc>兽王掷出他的双斧，它们交错回旋并最终会回到兽王手中。每把飞斧最多能对同一单位造成一次伤害。</desc>
+				<area>255</area>
+				<distance>1300</distance>
+				<duration>13</duration>
+				<mana>120</mana>
+				<special>伤害无视魔法免疫,法术攻击 普通伤害</special>
+				<grades>
+					<grade>
+						<level>1</level>
+						<desc>每把飞斧对经过的敌方单位造成90点的伤害</desc>
+					</grade>
+					<grade>
+						<level>2</level>
+						<desc>每把飞斧对经过的敌方单位造成120点的伤害</desc>
+					</grade>
+					<grade>
+						<level>3</level>
+						<desc>每把飞斧对经过的敌方单位造成150点的伤害</desc>
+					</grade>
+					<grade>
+						<level>4</level>
+						<desc>每把飞斧对经过的敌方单位造成180点的伤害</desc>
+					</grade>
+				</grades>
+			</skill>
+			<skill>
+				<name>野性呼唤</name>
+				<order>2</order>
+				<shortcut>D</shortcut>
+				<desc>兽王召唤野兽来帮助战斗。野兽的数量和能力随着技能等级的提升而提升。先前召唤的单位在下次召唤时会被移除。高等侦查战鹰拥有隐形技能，持续6秒，冷却时间30秒.高等豪猪的毒性攻击降低35%的攻击速度和移动速度。持续时间60 秒。普通豪猪降低20%持续60秒。</desc>
+				<castTime>40</castTime>
+				<duration>60</duration>
+				<mana>25</mana>
+				<grades>
+					<grade>
+						<level>1</level>
+						<desc>召唤一只侦查战鹰</desc>
+					</grade>
+					<grade>
+						<level>2</level>
+						<desc>召唤一只侦查战鹰和一只豪猪</desc>
+					</grade>
+					<grade>
+						<level>3</level>
+						<desc>召唤一只高等侦查战鹰和一只豪猪</desc>
+					</grade>
+					<grade>
+						<level>4</level>
+						<desc>召唤一只高等侦查战鹰和一只高等豪猪</desc>
+					</grade>
+				</grades>
+			</skill>
+			<skill>
+				<name>野性之心</name>
+				<order>3</order>
+				<shortcut>B</shortcut>
+				<desc>兽王的野性之心振奋了附近的友方单位，提升其攻击速度。</desc>
+				<area>1000</area>
+				<grades>
+					<grade>
+						<level>1</level>
+						<desc>提升18%的攻击速度</desc>
+					</grade>
+					<grade>
+						<level>2</level>
+						<desc>提升26%的攻击速度</desc>
+					</grade>
+					<grade>
+						<level>3</level>
+						<desc>提升32%的攻击速度</desc>
+					</grade>
+					<grade>
+						<level>4</level>
+						<desc>提升40%的攻击速度</desc>
+					</grade>
+				</grades>
+			</skill>
+			<skill>
+				<name>原始咆哮</name>
+				<order>4</order>
+				<shortcut>R</shortcut>
+				<desc>兽王惊天动地的咆哮对目标单位造成伤害并晕眩。兽王和目标单位之间的单位则因为被冲击波所波及而受到较少伤害，攻击速度和移动速度因此降低50%。被波及的单位同时会被震退至两侧，让兽王能长驱直入。</desc>
+				<distance>600</distance>
+				<duration>80/75/70</duration>
+				<mana>150/175/200</mana>
+				<special>晕眩效果、震退效果和震退伤害无视魔法免疫</special>
+				<grades>
+					<grade>
+						<level>1</level>
+						<desc>目标单位受到200点的伤害，晕眩3秒；受波及单位受到100点的伤害，攻击速度和移动速度下降50%，持续2秒</desc>
+					</grade>
+					<grade>
+						<level>2</level>
+						<desc>目标单位受到250点的伤害，晕眩3.5秒；受波及单位受到200点的伤害，攻击速度和移动速度下降50%，持续3秒</desc>
+					</grade>
+					<grade>
+						<level>3</level>
+						<desc>目标单位受到300点的伤害，晕眩4秒；受波及单位受到300点的伤害，攻击速度和移动速度下降50%，持续4秒</desc>
 					</grade>
 				</grades>
 			</skill>

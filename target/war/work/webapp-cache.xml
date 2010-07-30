@@ -123,14 +123,21 @@
           <string>WEB-INF/classes/org/conan/game/dota/generated/SkillType.class</string>
           <string>WEB-INF/classes/org/conan/game/model/client/DotaClient.class</string>
           <string>WEB-INF/classes/org/conan/game/model/client/DotaClientTest.class</string>
-          <string>WEB-INF/classes/org/conan/game/model/Grade.class</string>
-          <string>WEB-INF/classes/org/conan/game/model/Hero.class</string>
-          <string>WEB-INF/classes/org/conan/game/model/MainRun.class</string>
-          <string>WEB-INF/classes/org/conan/game/model/Skill.class</string>
+          <string>WEB-INF/classes/org/conan/game/model/demo/Grade.class</string>
+          <string>WEB-INF/classes/org/conan/game/model/demo/Hero.class</string>
+          <string>WEB-INF/classes/org/conan/game/model/demo/MainRun.class</string>
+          <string>WEB-INF/classes/org/conan/game/model/demo/Skill.class</string>
+          <string>WEB-INF/classes/org/conan/game/model/SingletonData.class</string>
           <string>WEB-INF/classes/org/conan/game/system/DotaApplication.class</string>
           <string>WEB-INF/classes/org/conan/game/system/DotaConstants.class</string>
+          <string>WEB-INF/classes/org/conan/game/web/hero/Hero$1$1.class</string>
+          <string>WEB-INF/classes/org/conan/game/web/hero/Hero$1$2.class</string>
+          <string>WEB-INF/classes/org/conan/game/web/hero/Hero$1.class</string>
           <string>WEB-INF/classes/org/conan/game/web/hero/Hero.class</string>
           <string>WEB-INF/classes/org/conan/game/web/hero/Hero.html</string>
+          <string>WEB-INF/classes/org/conan/game/web/hero/Heroes$1.class</string>
+          <string>WEB-INF/classes/org/conan/game/web/hero/Heroes.class</string>
+          <string>WEB-INF/classes/org/conan/game/web/hero/Heroes.html</string>
           <string>WEB-INF/classes/org/conan/game/web/HomePage.class</string>
           <string>WEB-INF/classes/org/conan/game/web/HomePage.html</string>
           <string>WEB-INF/classes/org/conan/game/web/LayoutPage.class</string>

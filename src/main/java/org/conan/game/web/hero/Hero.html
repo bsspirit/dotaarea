@@ -2,11 +2,74 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>Untitled Document</title>
+<title>英雄介绍</title>
 </head>
 <body>
-<span wicket:id="name"></span>
-<span wicket:id="shortName"></span>
+<div>
+	<h3><span wicket:id="name"></span>(<span wicket:id="shortName"></span>)</h3>
+	<p>
+		<span wicket:id="desc"></span>
+	</p>
+</div>
+
+<div>
+	<h3>初始属性:</h3>
+	<ul>
+		<li>初始射程：<span wicket:id="initShot"></span></li>
+		<li>初始攻击间隔：<span wicket:id="initCooldown"></span></li>
+		<li>初始防御：<span wicket:id="initDefense"></span></li>
+		<li>初始攻击力：<span wicket:id="initAttack"></span></li>
+		<li>初始智力值：<span wicket:id="intelligence"></span></li>
+		<li>初始敏捷值：<span wicket:id="agility"></span></li>
+		<li>初始力量值：<span wicket:id="strength"></span></li>
+		<li>初始移动速度：<span wicket:id="speed"></span></li>
+		<li>基本属性：<span wicket:id="basic"></span></li>
+		<li>力量增长系数：<span wicket:id="goupStrength"></span></li>
+		<li>敏捷增长系数：<span wicket:id="goupAgility"></span></li>
+		<li>智力增长系数：<span wicket:id="goupIntelligence"></span></li>
+	</ul>
+</div>
+
+<div>
+	<h3>技能:</h3>
+	<div>
+		<table border="1">
+			<tr>
+				<td>技能</td>
+				<td>名字</td>
+				<td>描述</td>
+			</tr>
+			<tr wicket:id="skills">
+				<td wicket:id="skill.order"></td>
+				<td>
+					<a wicket:id="skill.name.link">
+						<span wicket:id="skill.name"></span>
+					</a>
+					[<span wicket:id="skill.shortcut"></span>]
+				</td>
+				<td>
+					<p>
+						<span wicket:id="skill.desc"></span>
+					</p>
+					<p>
+						<span wicket:id="skill.special"></span>
+					</p>
+					<ul>
+						<li>作用范围：<span wicket:id="skill.area"></span></li>
+						<li>施法距离：<span wicket:id="skill.distance"></span></li>
+						<li>施法时间：<span wicket:id="skill.castTime"></span></li>
+						<li>冷却时间：<span wicket:id="skill.duration"></span></li>
+						<li>魔法消耗：<span wicket:id="skill.mana"></span></li>
+					</ul>
+					<ul wicket:id="grades">
+						<li>第<span wicket:id="skill.grade.level"></span>级：<span wicket:id="skill.grade.desc"></span></li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
 
 </body>
 </html>

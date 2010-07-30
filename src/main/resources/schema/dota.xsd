@@ -9,9 +9,11 @@
 	<xsd:element name="order" type="xsd:int"></xsd:element>
 	<xsd:element name="area" type="xsd:string"></xsd:element>
 	<xsd:element name="distance" type="xsd:string"></xsd:element>
-	<xsd:element name="time" type="xsd:string"></xsd:element>
+	<xsd:element name="castTime" type="xsd:string"></xsd:element>
+	<xsd:element name="duration" type="xsd:string"></xsd:element>
 	<xsd:element name="mana" type="xsd:string"></xsd:element>
 	<xsd:element name="shortcut" type="xsd:string"></xsd:element>
+	<xsd:element name="special" type="xsd:string"></xsd:element>
 	
 	<xsd:element name="basic" type="xsd:string"></xsd:element>
 	<xsd:element name="initShot" type="xsd:int"></xsd:element>
@@ -84,8 +86,10 @@
 			<xsd:element ref="desc" maxOccurs="1" />
 			<xsd:element ref="area" maxOccurs="1" minOccurs="0" />
 			<xsd:element ref="distance" maxOccurs="1" minOccurs="0" />
-			<xsd:element ref="time" maxOccurs="1" minOccurs="0" />
+			<xsd:element ref="castTime" maxOccurs="1" minOccurs="0" />
+			<xsd:element ref="duration" maxOccurs="1" minOccurs="0" />
 			<xsd:element ref="mana" maxOccurs="1" minOccurs="0" />
+			<xsd:element ref="special" maxOccurs="1" minOccurs="0" />
 			<xsd:element ref="grades" maxOccurs="1" />
 		</xsd:sequence>
 
